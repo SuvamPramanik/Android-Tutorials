@@ -107,6 +107,10 @@ onDisabled() | Called once the last instance of your widget is removed from the 
 onUpdate() | Called for every update of the widget. Contains the ids of appWidgetIds for which an update is needed. Note that this may be all of the AppWidget instances for this provider, or just a subset of them, as stated in the method’s JavaDoc. For example, if more than one widget is added to the home screen, only the last one changes (until reinstall).
 onDeleted() | Widget instance is removed from the home screen.
 
+
+***
+ 
+ 
 ## Implementation of Widget
 
 #### 1. First. let's create a background for the widget. Create a new file _myshape.xml_ inside _res/drawable_ folder.
