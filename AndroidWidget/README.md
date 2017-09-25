@@ -1,6 +1,6 @@
 ## [Android Widget](https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html)
 
-By the end of this tutorial, you will be able to create the following widget.
+In this tutorial, we will create a widget which displays an image. This image is updated every 30 minutes. However, you can register _OnClickListener_ or create a custom button to update the widget whenever the user click it.
 
 ![Demo]()
 
@@ -334,7 +334,7 @@ This is the most important step in creating a widget. For this, we need to regis
 
 _**Note:** The receiver name is the name of your app widget provider class implementation. We add an intent filter for the UPDATE_WIDGET event such that your widget will update at regular intervals._
 
-**To get a hands-on experience, checkout this repo using git clone command shown below. And then, launch the PendingIntent project in Android Studio.**
+**To get a hands-on experience, checkout this repo using git clone command shown below. And then, launch the AndroidWidget project in Android Studio.**
 
 ```
 git clone https://github.com/SuvamPramanik/Android-Tutorials.git
