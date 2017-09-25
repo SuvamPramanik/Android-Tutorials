@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void createNotification() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SuvamPramanik/Android-Tutorials/"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SuvamPramanik/Android-Tutorials/tree/master/PendingIntent/"));
         // Creating a pending intent and wrapping our intent
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         //Create a notification
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void cancelNotification() {
-
         NotificationManager manager = (NotificationManager) getApplicationContext().getSystemService(NOTIFICATION_SERVICE);
         manager.cancel(NOTIFICATION_ID);
     }
