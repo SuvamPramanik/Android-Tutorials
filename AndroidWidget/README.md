@@ -1,8 +1,8 @@
-## [Android Widget](https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html)
+## Android Widget ([AppWidgetProvider](https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html))
 
 In this tutorial, we will create a widget which displays an image. This image is updated every 30 minutes. However, you can register _OnClickListener_ or create a custom button to update the widget whenever the user click it.
 
-![Demo]()
+![Demo](https://github.com/SuvamPramanik/Android-Tutorials/blob/master/AndroidWidget/asset/AppWidget.gif)
 
 #### 1. Home Screen Widgets
 
@@ -31,7 +31,7 @@ To create a widget, you need to follow the below steps:
 Before Android 3.1 a widget always took a fixed amount of cells on the home screen. A cell is usually used to display the icon of one application. As a calculation rule you should define the size of the widget with the formula: **((Number of columns / rows) * 74) - 2**. These are device independent pixels and the -2 is used to avoid rounding errors.
 
 #### 4. Using Views and Layouts
-Widget layout can be defined in XML and can be saved in project’s res/layout/ directory. Currently App Widget layouts are based on RemoteViews and android currently supports limited View widget. Creating layout for the widget is same as creating the layout for other activity type. But to make a good widget we need to follow the android widget guidelines.
+Widget layout can be defined in XML and can be saved in project’s _res/layout/_ directory. Currently App Widget layouts are based on RemoteViews and android currently supports limited View widget. Creating layout for the widget is same as creating the layout for other activity type. But to make a good widget we need to follow the android widget guidelines.
 
 A RemoteViews object or App Widget currently supports the following layout classes
 
@@ -113,7 +113,9 @@ onDeleted() | Widget instance is removed from the home screen.
  
 ## Implementation of Widget
 
-#### 1. First. let's create a background for the widget. Create a new file _myshape.xml_ inside _res/drawable_ folder.
+#### 1. Create _myshape.xml_ inside _res/drawable_ folder.
+
+This file is used to create a background for your widget.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -138,7 +140,9 @@ onDeleted() | Widget instance is removed from the home screen.
 </shape>
 ```
 
-#### 2. Now, define the layout for the AppWidget. Create _widget_layout.xml_ inside _res/layout_ directory.
+#### 2. Create _widget_layout.xml_ inside _res/layout_ directory.
+
+This xml file defines the layout of the widget.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
