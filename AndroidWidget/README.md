@@ -333,3 +333,9 @@ This is the most important step in creating a widget. For this, we need to regis
 ```
 
 _**Note:** The receiver name is the name of your app widget provider class implementation. We add an intent filter for the UPDATE_WIDGET event such that your widget will update at regular intervals._
+
+**To get a hands-on experience, checkout this repo using git clone command shown below. And then, launch the PendingIntent project in Android Studio.**
+
+```
+git clone https://github.com/SuvamPramanik/Android-Tutorials.git
+```
