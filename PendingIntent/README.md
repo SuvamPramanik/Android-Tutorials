@@ -65,9 +65,12 @@ builder.setSmallIcon(android.R.drawable.ic_dialog_alert)
 NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 manager.notify(NOTIFICATION_ID, builder.build());
 ```
-The method **setContentIntent(pendingIntent)** is used to pass our pendingIntent to the NotificationManager. The NOTIFICATION_ID is set to 1 and it's used to build the notification and cancel it. On running the code, you will get something like this.
+The method **setContentIntent(pendingIntent)** is used to pass our pendingIntent to the NotificationManager. The NOTIFICATION_ID is set to 1 and it's used to build the notification and cancel it. 
 
-![Demo](https://github.com/SuvamPramanik/Android-Tutorials/edit/master/PendingIntent/asset/android-notifications-output.gif)
+On running the code, you will get something like this.
+
+![Demo](https://github.com/SuvamPramanik/Android-Tutorials/blob/master/PendingIntent/asset/android-notification-output.gif)
+
 
 #### Using PendingIntent wiht AlarmManager
 
@@ -102,7 +105,8 @@ public class MyReceiver extends BroadcastReceiver {
 
 The above code snippets will show a Toast message "Alarm triggered!!!" after a second of clicking the Start button.
 
-![Output](https://github.com/SuvamPramanik/Android-Tutorials/edit/master/PendingIntent/asset/android-alarmmanager-output.png)
+![Demo](https://github.com/SuvamPramanik/Android-Tutorials/blob/master/PendingIntent/asset/android-alarmmanager-output.gif)
+
 
 
 **To get a hands-on experience, checkout this repo using git clone command shown below. And then, launch the PendingIntent project in Android Studio.**
