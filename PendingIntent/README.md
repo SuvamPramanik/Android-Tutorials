@@ -67,7 +67,7 @@ manager.notify(NOTIFICATION_ID, builder.build());
 ```
 The method **setContentIntent(pendingIntent)** is used to pass our pendingIntent to the NotificationManager. The NOTIFICATION_ID is set to 1 and it's used to build the notification and cancel it. On running the code, you will get something like this.
 
-![Watch the Output](https://github.com/SuvamPramanik/Android-Tutorials/edit/master/PendingIntent/asset/android-notifications-output.gif)
+![Demo](https://github.com/SuvamPramanik/Android-Tutorials/edit/master/PendingIntent/asset/android-notifications-output.gif)
 
 #### Using PendingIntent wiht AlarmManager
 
