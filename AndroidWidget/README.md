@@ -1,6 +1,6 @@
 ## [Android Widget](https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html)
 
-In this tutorial, we will create a widget which displays an inmage. This image is updated every 30 minutes. However, you can register _OnClickListener_ or create a custom button to update the widget whenever the user click it.
+In this tutorial, we will create a widget which displays an image. This image is updated every 30 minutes. However, you can register _OnClickListener_ or create a custom button to update the widget whenever the user click it.
 
 ![Demo]()
 
